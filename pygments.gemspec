@@ -6,11 +6,11 @@ Gem::Specification.new do |s|
   s.name        = "pygments"
   s.version     = Pygments::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
-  s.homepage    = "http://rubygems.org/gems/pygments"
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.authors     = ["Nathan Youngman"]
+  s.email       = ["git@nathany.com"]
+  s.homepage    = "https://github.com/nathany/pygments-gem"
+  s.summary     = %q{Pygments bundled as a gem with a Ruby wrapper.}
+  s.description = %q{Pygments bundled as a gem with a Ruby wrapper.}
 
   s.rubyforge_project = "pygments"
 
