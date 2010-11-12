@@ -1,7 +1,9 @@
-*.pyc
 .DS_Store
 *.tmproj
+.rvmrc
 
 pkg/*
 *.gem
 .bundle
+
+*.pyc
