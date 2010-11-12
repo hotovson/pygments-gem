@@ -15,6 +15,7 @@ Gem::Specification.new do |s|
   s.rubyforge_project = "pygments"
 
   s.add_development_dependency('rspec', '~> 2.1')
+  s.add_development_dependency('autotest', '~> 4.4')
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
