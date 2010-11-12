@@ -5,13 +5,15 @@ describe Pygments do
   
   it "should default to text formatter" do
     syntaxer = Pygments.new(File.new(__FILE__))
-    syntaxer.should_receive(:execute).with('python pygmentize.py -l text -f html').and_return(true)
+    cmd = Pygments.bin + ' -l text -f html'
+    syntaxer.should_receive(:execute).with(cmd).and_return(true)
     syntaxer.colorize
   end
 
   it "should accept options" do
     syntaxer = Pygments.new(File.new(__FILE__), :ruby)
-    syntaxer.should_receive(:execute).with('python pygmentize.py -l ruby -f html').and_return(true)
+    cmd = Pygments.bin + ' -l ruby -f html'
+    syntaxer.should_receive(:execute).with(cmd).and_return(true)
     syntaxer.colorize
   end
 

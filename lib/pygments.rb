@@ -20,7 +20,7 @@ class Pygments
   end
 
   def colorize(options = {})
-    execute "python pygmentize.py" + convert_options(options)
+    execute bin + convert_options(options)
   end
   alias_method :to_s, :colorize
 
@@ -37,6 +37,13 @@ class Pygments
     else
       stream << @target
     end
+  end
+
+  def self.bin
+    "/usr/bin/env python " + File.join(File.dirname(__FILE__), '..', 'pygmentize.py')
+  end
+  def bin
+    self.class.bin
   end
 
 end
