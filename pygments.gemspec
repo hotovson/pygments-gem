@@ -6,14 +6,14 @@ Gem::Specification.new do |s|
   s.name        = "pygments"
   s.version     = Pygments::VERSION
   s.platform    = Gem::Platform::RUBY
+  s.required_ruby_version = '>= 1.8.7'
+  s.requirements << 'python 2.x'
   s.authors     = ["Nathan Youngman"]
   s.email       = ["git@nathany.com"]
-  s.homepage    = "https://github.com/nathany/pygments-gem"
-  s.summary     = %q{Pygments bundled as a gem with a Ruby wrapper.}
-  s.description = %q{Pygments bundled as a gem with a Ruby wrapper.}
-
-  s.rubyforge_project = "pygments"
-
+  s.homepage    = "http://pygments.heroku.com/"
+  s.summary     = %q{Pygments syntax highlighter bundled as a gem with a Ruby wrapper.}
+  s.description = %q{Pygments syntax highlighter bundled as a gem with a Ruby wrapper. It requires Python 2.x.}
+  
   s.add_development_dependency('rspec', '~> 2.1')
   s.add_development_dependency('autotest', '~> 4.4')
 
