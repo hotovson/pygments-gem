@@ -18,18 +18,26 @@ Pygments is the defacto-standard syntax highlighter, supporting a large range of
 
 The Pygments gem is a *proof of concept* presently based on [Albino][]. It bundles in the Python code for Pygments, allowing it to run on Ruby host [Heroku][], as well as making installation more *Rubyish.*
 
-This is only the beginning. See the Issues and the Wiki for our future plans.
+See the [documentation for Albino][albino_docs], but note that [this will change][pygments_api].
 
 Note: The purpose of this gem is to provide a Ruby interface to Pygments. If you are looking for a command line interface (CLI), it is suggested that you install [Pygments][] in the usual way and use `pygmentize`. (this may change)
 
 
 [Pygments]: http://pygments.org/
 [pygments_src]: http://bitbucket.org/birkenfeld/pygments-main/src
+
 [Python]: http://python.org
 [Ruby]: http://www.ruby-lang.org/en/
+
 [Albino]: https://github.com/github/albino
 [CodeRay]: http://coderay.rubychan.de/
 [coderay_mirror]: https://github.com/rubychan/coderay
 [SyntaxHighlighter]: http://alexgorbatchev.com/SyntaxHighlighter/
 [GeSHi]: http://qbnz.com/highlighter/
+
 [Heroku]: http://heroku.com
+
+[albino_docs]: https://github.com/nathany/albino/blob/master/lib/albino.rb
+[pygments_api]: https://github.com/nathany/pygments-gem/wiki/API
+
+
